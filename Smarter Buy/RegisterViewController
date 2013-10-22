@@ -1,0 +1,70 @@
+//
+//  RegisterViewController.m
+//  Smarter Buy
+//
+//  Created by Sean McDonald on 10/21/13.
+//  Copyright (c) 2013 Hewlett-Packard. All rights reserved.
+//
+
+#import "RegisterViewController.h"
+
+@interface RegisterViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (weak, nonatomic) IBOutlet UITextField *lastName;
+@property (weak, nonatomic) IBOutlet UITextField *address1;
+@property (weak, nonatomic) IBOutlet UITextField *city;
+@property (weak, nonatomic) IBOutlet UITextField *zip;
+@property (weak, nonatomic) IBOutlet UITextField *phone;
+@property (weak, nonatomic) NSArray *imagesArray;
+
+@end
+
+@implementation RegisterViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+	// Do any additional setup after loading the view.
+    self.imagesArray = [NSArray arrayWithObjects:[UIImage imageNamed:@"television.jpg"],
+                        [UIImage imageNamed:@"laptop.jpg"], nil];
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 10;
+}
+
+// returns the # of rows in each component..
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component
+{
+    return 6;
+}
+
+- (IBAction)save:(id)sender {
+    [self.firstName resignFirstResponder];
+    [self.lastName resignFirstResponder];
+    [self.address1 resignFirstResponder];
+    [self.city resignFirstResponder];
+    [self.zip resignFirstResponder];
+    [self.phone resignFirstResponder];
+    
+    NSString *firstName = [firstName text];
+    NSString *lastName  = [lastName text];
+}
+@end

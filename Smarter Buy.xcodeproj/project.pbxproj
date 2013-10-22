@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0099262181581F700A0A3CE /* television.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099260181581F700A0A3CE /* television.jpg */; };
+		C0099263181581F700A0A3CE /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099261181581F700A0A3CE /* laptop.jpg */; };
+		C0099265181592C300A0A3CE /* RegisterViewController in Resources */ = {isa = PBXBuildFile; fileRef = C0099264181592C300A0A3CE /* RegisterViewController */; };
 		C0C798C21811B92200C2D037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C11811B92200C2D037 /* Foundation.framework */; };
 		C0C798C41811B92200C2D037 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C31811B92200C2D037 /* CoreGraphics.framework */; };
 		C0C798C61811B92200C2D037 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C51811B92200C2D037 /* UIKit.framework */; };
@@ -22,6 +25,7 @@
 		C0C798E61811B92200C2D037 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C51811B92200C2D037 /* UIKit.framework */; };
 		C0C798EE1811B92200C2D037 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0C798EC1811B92200C2D037 /* InfoPlist.strings */; };
 		C0C798F01811B92200C2D037 /* Smarter_BuyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C798EF1811B92200C2D037 /* Smarter_BuyTests.m */; };
+		C0D516C6181561C8006D2DDD /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D516C5181561C8006D2DDD /* RegisterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C0099260181581F700A0A3CE /* television.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = television.jpg; sourceTree = "<group>"; };
+		C0099261181581F700A0A3CE /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
+		C0099264181592C300A0A3CE /* RegisterViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RegisterViewController; path = "Smarter Buy/RegisterViewController"; sourceTree = "<group>"; };
 		C0C798BE1811B92200C2D037 /* Smarter Buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smarter Buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C798C11811B92200C2D037 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0C798C31811B92200C2D037 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +62,8 @@
 		C0C798EB1811B92200C2D037 /* Smarter BuyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Smarter BuyTests-Info.plist"; sourceTree = "<group>"; };
 		C0C798ED1811B92200C2D037 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C0C798EF1811B92200C2D037 /* Smarter_BuyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smarter_BuyTests.m; sourceTree = "<group>"; };
+		C0D516C4181561C8006D2DDD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		C0D516C5181561C8006D2DDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,7 @@
 		C0C798B51811B92200C2D037 = {
 			isa = PBXGroup;
 			children = (
+				C0099264181592C300A0A3CE /* RegisterViewController */,
 				C0C798C71811B92200C2D037 /* Smarter Buy */,
 				C0C798E91811B92200C2D037 /* Smarter BuyTests */,
 				C0C798C01811B92200C2D037 /* Frameworks */,
@@ -120,6 +130,8 @@
 				C0C798D61811B92200C2D037 /* Main_iPad.storyboard */,
 				C0C798D91811B92200C2D037 /* ViewController.h */,
 				C0C798DA1811B92200C2D037 /* ViewController.m */,
+				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
+				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
 				C0C798DC1811B92200C2D037 /* Images.xcassets */,
 				C0C798C81811B92200C2D037 /* Supporting Files */,
 			);
@@ -129,6 +141,8 @@
 		C0C798C81811B92200C2D037 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C0099260181581F700A0A3CE /* television.jpg */,
+				C0099261181581F700A0A3CE /* laptop.jpg */,
 				C0C798C91811B92200C2D037 /* Smarter Buy-Info.plist */,
 				C0C798CA1811B92200C2D037 /* InfoPlist.strings */,
 				C0C798CD1811B92200C2D037 /* main.m */,
@@ -232,9 +246,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C798D81811B92200C2D037 /* Main_iPad.storyboard in Resources */,
+				C0099265181592C300A0A3CE /* RegisterViewController in Resources */,
 				C0C798DD1811B92200C2D037 /* Images.xcassets in Resources */,
 				C0C798D51811B92200C2D037 /* Main_iPhone.storyboard in Resources */,
+				C0099263181581F700A0A3CE /* laptop.jpg in Resources */,
 				C0C798CC1811B92200C2D037 /* InfoPlist.strings in Resources */,
+				C0099262181581F700A0A3CE /* television.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +273,7 @@
 				C0C798DB1811B92200C2D037 /* ViewController.m in Sources */,
 				C0C798D21811B92200C2D037 /* AppDelegate.m in Sources */,
 				C0C798CE1811B92200C2D037 /* main.m in Sources */,
+				C0D516C6181561C8006D2DDD /* RegisterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +492,7 @@
 				C0C798F51811B92200C2D037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C0C798F61811B92200C2D037 /* Build configuration list for PBXNativeTarget "Smarter BuyTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +501,7 @@
 				C0C798F81811B92200C2D037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
