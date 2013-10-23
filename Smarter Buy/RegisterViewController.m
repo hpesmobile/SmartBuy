@@ -10,8 +10,6 @@
 
 @interface RegisterViewController ()
 
-@property (weak, nonatomic) NSArray *imagesArray;
-
 @end
 
 @implementation RegisterViewController
@@ -27,12 +25,20 @@
 
 - (void)viewDidLoad
 {
+    [super viewDidLoad];
+    self.statesArray = [NSArray arrayWithObjects:@"Alabama", @"Alaska", @"Arizona", @"Arkansas", @"California", @"Colorado", @"Connecticut", @"Delaware", @"Florida", @"Georgia", @"Hawaii", @"Idaho", @"Illinois", @"Indiana", @"Iowa", @"Kansas", @"Kentucky", @"Louisiana", @"Maine", @"Maryland", @"Massachusetts", @"Michigan", @"Minnesota", @"Mississippi", @"Missouri", @"Montana", @"Nebraska", @"Nevada", @"New Hampshire", @"New Jersey", @"New Mexico", @"New York", @"North Carolina", @"North Dakota", @"Ohio", @"Oklahoma", @"Oregon", @"Pennsylvania", @"Rhode Island", @"South Carolina", @"South Dakota", @"Tennessee", @"Texas", @"Utah", @"Vermont", @"Virginia", @"Washington", @"West Virginia", @"Wisconsin", @"Wyoming", nil];
+    
+    self.statePicker.delegate = self;
+    self.statePicker.dataSource = self;
+    [self.statePicker reloadAllComponents];
+    
     self.firstName.autocapitalizationType = UITextAutocapitalizationTypeWords;
     self.lastName.autocapitalizationType = UITextAutocapitalizationTypeWords;
     self.address1.keyboardType = UIKeyboardTypeNumbersAndPunctuation;
     self.city.autocapitalizationType = UITextAutocapitalizationTypeWords;
     self.zip.keyboardType = UIKeyboardTypeNumberPad;
     self.phone.keyboardType = UIKeyboardTypePhonePad;
+    
     // Get the stored data before the view loads
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     NSString *firstNameText = [defaults objectForKey:@"firstName"];
@@ -41,6 +47,7 @@
     NSString *cityText = [defaults objectForKey:@"city"];
     NSString *zipText = [defaults objectForKey:@"zip"];
     NSString *phoneText = [defaults objectForKey:@"phone"];
+    
     // Update the UI elements with the saved data
     [self.firstName setText:firstNameText];
     [self.lastName setText:lastNameText];
@@ -48,15 +55,11 @@
     [self.city setText:cityText];
     [self.zip setText:zipText];
     [self.phone setText:phoneText];
+//    [self.statePicker selectedRowInComponent:0];
     
-    self.imagesArray = [NSArray arrayWithObjects:[UIImage imageNamed:@"television.jpg"],
-                        [UIImage imageNamed:@"laptop.jpg"], nil];
-    
-    [super viewDidLoad];
     UIControl *viewControl = (UIControl*)self.view;
     [viewControl addTarget:self action:@selector(dismissKeyboard:) forControlEvents:UIControlEventTouchDown];
 	// Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -73,18 +76,6 @@
     [self.city resignFirstResponder];
     [self.zip resignFirstResponder];
     [self.phone resignFirstResponder];
-}
-
-// returns the number of 'columns' to display.
-- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
-    return 10;
-}
-
-// returns the # of rows in each component..
-- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component
-{
-    return 6;
 }
 
 - (IBAction)save:(id)sender {
@@ -112,4 +103,38 @@
     [defaults synchronize];
     NSLog(@"Data saved");
 }
+
+#pragma mark -
+#pragma mark PickerView DataSource
+// returns the number of 'columns' to display.
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+// returns the # of rows in each component.
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component
+{
+    if (self.statesArray != nil) {
+        NSLog(@"Array count: %lu", (unsigned long)[self.statesArray count]);
+        return [self.statesArray count];
+    }
+    return 0;
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    if (self.statesArray != nil) {
+        return [self.statesArray objectAtIndex:row];
+    }
+    return @"";
+}
+
+#pragma mark -
+#pragma mark PickerView Delegate
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSLog(@"You selected this: %@", [self.statesArray objectAtIndex:row]);
+}
+
 @end

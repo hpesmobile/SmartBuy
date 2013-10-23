@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C000F331181808DD005F3EDE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C000F330181808DD005F3EDE /* AboutViewController.m */; };
 		C0099262181581F700A0A3CE /* television.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099260181581F700A0A3CE /* television.jpg */; };
 		C0099263181581F700A0A3CE /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099261181581F700A0A3CE /* laptop.jpg */; };
 		C0099265181592C300A0A3CE /* RegisterViewController in Resources */ = {isa = PBXBuildFile; fileRef = C0099264181592C300A0A3CE /* RegisterViewController */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C000F32F181808DD005F3EDE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		C000F330181808DD005F3EDE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		C0099260181581F700A0A3CE /* television.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = television.jpg; sourceTree = "<group>"; };
 		C0099261181581F700A0A3CE /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
 		C0099264181592C300A0A3CE /* RegisterViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RegisterViewController; path = "Smarter Buy/RegisterViewController"; sourceTree = "<group>"; };
@@ -132,6 +135,8 @@
 				C0C798DA1811B92200C2D037 /* ViewController.m */,
 				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
 				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
+				C000F32F181808DD005F3EDE /* AboutViewController.h */,
+				C000F330181808DD005F3EDE /* AboutViewController.m */,
 				C0C798DC1811B92200C2D037 /* Images.xcassets */,
 				C0C798C81811B92200C2D037 /* Supporting Files */,
 			);
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C798DB1811B92200C2D037 /* ViewController.m in Sources */,
+				C000F331181808DD005F3EDE /* AboutViewController.m in Sources */,
 				C0C798D21811B92200C2D037 /* AppDelegate.m in Sources */,
 				C0C798CE1811B92200C2D037 /* main.m in Sources */,
 				C0D516C6181561C8006D2DDD /* RegisterViewController.m in Sources */,

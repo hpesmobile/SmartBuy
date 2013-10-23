@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RegisterViewController : UIViewController <UIPickerViewDataSource,UIPickerViewDelegate>
+@interface RegisterViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstName;
 @property (weak, nonatomic) IBOutlet UITextField *lastName;
 @property (weak, nonatomic) IBOutlet UITextField *address1;
@@ -16,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *zip;
 @property (weak, nonatomic) IBOutlet UITextField *phone;
 @property (weak, nonatomic) IBOutlet UIPickerView *statePicker;
-
+@property (weak, nonatomic) NSArray *statesArray;
 
 - (IBAction)save:(id)sender;
 
