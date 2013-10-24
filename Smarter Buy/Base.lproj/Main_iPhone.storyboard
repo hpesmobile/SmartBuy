@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="OvR-wI-xLL"/>
                         <viewControllerLayoutGuide type="bottom" id="tzS-3d-TVg"/>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="273" y="31"/>
         </scene>
-        <!--View Controller-->
+        <!--Catalog View Controller-->
         <scene sceneID="LeW-Wl-X30">
             <objects>
-                <viewController id="ZVP-oE-6q1" sceneMemberID="viewController">
+                <viewController id="ZVP-oE-6q1" customClass="CatalogViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wxB-dY-I8o"/>
                         <viewControllerLayoutGuide type="bottom" id="22R-kP-kPZ"/>
@@ -68,17 +68,62 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MN6-VQ-jX9">
-                                <rect key="frame" x="0.0" y="203" width="320" height="162"/>
+                                <rect key="frame" x="0.0" y="47" width="320" height="162"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1a-5s-pmA">
+                                <rect key="frame" x="121" y="518" width="78" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Item">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EmM-wl-gq3" kind="push" id="ZWN-bp-9Vi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="OqS-m1-wd2"/>
+                    <connections>
+                        <outlet property="catalogPicker" destination="MN6-VQ-jX9" id="GZt-nl-tnQ"/>
+                        <outlet property="selectButton" destination="V1a-5s-pmA" id="42j-dA-2pq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2DO-Ec-tF8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="699" y="31"/>
+        </scene>
+        <!--Checkout View Controller-->
+        <scene sceneID="pmR-5B-GBG">
+            <objects>
+                <viewController id="EmM-wl-gq3" customClass="CheckoutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5JZ-bz-NrK"/>
+                        <viewControllerLayoutGuide type="bottom" id="skQ-5Q-GAz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="g3B-sr-dcJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXY-ga-IrG">
+                                <rect key="frame" x="119" y="518" width="82" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Place Order">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rQs-78-V07"/>
+                    <connections>
+                        <outlet property="orderButton" destination="dXY-ga-IrG" id="cUE-K6-kdh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hP-zf-fTM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1128" y="31"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="CqW-gc-bO6">
@@ -200,7 +245,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mb8-Qp-fRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="699" y="-653"/>
+            <point key="canvasLocation" x="699" y="-639"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="zPW-5w-Dpw">

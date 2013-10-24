@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C000F331181808DD005F3EDE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C000F330181808DD005F3EDE /* AboutViewController.m */; };
+		C001F70218194D54009CCCF9 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C001F70118194D54009CCCF9 /* CatalogViewController.m */; };
+		C001F70518194EC3009CCCF9 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C001F70418194EC3009CCCF9 /* CheckoutViewController.m */; };
 		C0099262181581F700A0A3CE /* television.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099260181581F700A0A3CE /* television.jpg */; };
 		C0099263181581F700A0A3CE /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099261181581F700A0A3CE /* laptop.jpg */; };
 		C0099265181592C300A0A3CE /* RegisterViewController in Resources */ = {isa = PBXBuildFile; fileRef = C0099264181592C300A0A3CE /* RegisterViewController */; };
@@ -19,7 +21,7 @@
 		C0C798D21811B92200C2D037 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C798D11811B92200C2D037 /* AppDelegate.m */; };
 		C0C798D51811B92200C2D037 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C798D31811B92200C2D037 /* Main_iPhone.storyboard */; };
 		C0C798D81811B92200C2D037 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0C798D61811B92200C2D037 /* Main_iPad.storyboard */; };
-		C0C798DB1811B92200C2D037 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C798DA1811B92200C2D037 /* ViewController.m */; };
+		C0C798DB1811B92200C2D037 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C798DA1811B92200C2D037 /* HomeViewController.m */; };
 		C0C798DD1811B92200C2D037 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0C798DC1811B92200C2D037 /* Images.xcassets */; };
 		C0C798E41811B92200C2D037 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798E31811B92200C2D037 /* XCTest.framework */; };
 		C0C798E51811B92200C2D037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C11811B92200C2D037 /* Foundation.framework */; };
@@ -42,6 +44,10 @@
 /* Begin PBXFileReference section */
 		C000F32F181808DD005F3EDE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		C000F330181808DD005F3EDE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		C001F70018194D54009CCCF9 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
+		C001F70118194D54009CCCF9 /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
+		C001F70318194EC3009CCCF9 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
+		C001F70418194EC3009CCCF9 /* CheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckoutViewController.m; sourceTree = "<group>"; };
 		C0099260181581F700A0A3CE /* television.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = television.jpg; sourceTree = "<group>"; };
 		C0099261181581F700A0A3CE /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
 		C0099264181592C300A0A3CE /* RegisterViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RegisterViewController; path = "Smarter Buy/RegisterViewController"; sourceTree = "<group>"; };
@@ -57,8 +63,8 @@
 		C0C798D11811B92200C2D037 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C0C798D41811B92200C2D037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		C0C798D71811B92200C2D037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		C0C798D91811B92200C2D037 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C0C798DA1811B92200C2D037 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C0C798D91811B92200C2D037 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		C0C798DA1811B92200C2D037 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		C0C798DC1811B92200C2D037 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C0C798E21811B92200C2D037 /* Smarter BuyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Smarter BuyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C798E31811B92200C2D037 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -129,14 +135,18 @@
 			children = (
 				C0C798D01811B92200C2D037 /* AppDelegate.h */,
 				C0C798D11811B92200C2D037 /* AppDelegate.m */,
-				C0C798D31811B92200C2D037 /* Main_iPhone.storyboard */,
-				C0C798D61811B92200C2D037 /* Main_iPad.storyboard */,
-				C0C798D91811B92200C2D037 /* ViewController.h */,
-				C0C798DA1811B92200C2D037 /* ViewController.m */,
-				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
-				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
 				C000F32F181808DD005F3EDE /* AboutViewController.h */,
 				C000F330181808DD005F3EDE /* AboutViewController.m */,
+				C001F70018194D54009CCCF9 /* CatalogViewController.h */,
+				C001F70118194D54009CCCF9 /* CatalogViewController.m */,
+				C001F70318194EC3009CCCF9 /* CheckoutViewController.h */,
+				C001F70418194EC3009CCCF9 /* CheckoutViewController.m */,
+				C0C798D91811B92200C2D037 /* HomeViewController.h */,
+				C0C798DA1811B92200C2D037 /* HomeViewController.m */,
+				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
+				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
+				C0C798D31811B92200C2D037 /* Main_iPhone.storyboard */,
+				C0C798D61811B92200C2D037 /* Main_iPad.storyboard */,
 				C0C798DC1811B92200C2D037 /* Images.xcassets */,
 				C0C798C81811B92200C2D037 /* Supporting Files */,
 			);
@@ -275,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0C798DB1811B92200C2D037 /* ViewController.m in Sources */,
+				C0C798DB1811B92200C2D037 /* HomeViewController.m in Sources */,
+				C001F70518194EC3009CCCF9 /* CheckoutViewController.m in Sources */,
 				C000F331181808DD005F3EDE /* AboutViewController.m in Sources */,
+				C001F70218194D54009CCCF9 /* CatalogViewController.m in Sources */,
 				C0C798D21811B92200C2D037 /* AppDelegate.m in Sources */,
 				C0C798CE1811B92200C2D037 /* main.m in Sources */,
 				C0D516C6181561C8006D2DDD /* RegisterViewController.m in Sources */,
