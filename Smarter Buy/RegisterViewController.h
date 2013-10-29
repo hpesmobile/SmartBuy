@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
 
 @interface RegisterViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *firstName;
@@ -16,7 +17,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *zip;
 @property (weak, nonatomic) IBOutlet UITextField *phone;
 @property (weak, nonatomic) IBOutlet UIPickerView *statePicker;
-@property (weak, nonatomic) NSArray *statesArray;
+@property (strong, nonatomic) NSArray *statesArray;
+@property (strong, nonatomic) User *currentUser;
 
 - (IBAction)save:(id)sender;
 

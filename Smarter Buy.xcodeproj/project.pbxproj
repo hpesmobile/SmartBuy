@@ -13,6 +13,13 @@
 		C0099262181581F700A0A3CE /* television.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099260181581F700A0A3CE /* television.jpg */; };
 		C0099263181581F700A0A3CE /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099261181581F700A0A3CE /* laptop.jpg */; };
 		C0099265181592C300A0A3CE /* RegisterViewController in Resources */ = {isa = PBXBuildFile; fileRef = C0099264181592C300A0A3CE /* RegisterViewController */; };
+		C02CE58C181D955300D35AF7 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C02CE58B181D955300D35AF7 /* UserManager.m */; };
+		C02CE58E181EDF7100D35AF7 /* catalog.plist in Resources */ = {isa = PBXBuildFile; fileRef = C02CE58D181EDF7100D35AF7 /* catalog.plist */; };
+		C05C29C21819BBCD00934685 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = C05C29C11819BBCD00934685 /* Item.m */; };
+		C0650BDB1820157800F9C186 /* videogame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0650BDA1820157800F9C186 /* videogame.jpg */; };
+		C0650BDD1820236900F9C186 /* phone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0650BDC1820236900F9C186 /* phone.jpg */; };
+		C0650BDF1820237200F9C186 /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0650BDE1820237200F9C186 /* ipad.jpg */; };
+		C0A4C54E181AEFD900F4ED7A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4C54D181AEFD900F4ED7A /* User.m */; };
 		C0C798C21811B92200C2D037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C11811B92200C2D037 /* Foundation.framework */; };
 		C0C798C41811B92200C2D037 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C31811B92200C2D037 /* CoreGraphics.framework */; };
 		C0C798C61811B92200C2D037 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C51811B92200C2D037 /* UIKit.framework */; };
@@ -51,6 +58,16 @@
 		C0099260181581F700A0A3CE /* television.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = television.jpg; sourceTree = "<group>"; };
 		C0099261181581F700A0A3CE /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
 		C0099264181592C300A0A3CE /* RegisterViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RegisterViewController; path = "Smarter Buy/RegisterViewController"; sourceTree = "<group>"; };
+		C02CE58A181D955300D35AF7 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
+		C02CE58B181D955300D35AF7 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
+		C02CE58D181EDF7100D35AF7 /* catalog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = catalog.plist; sourceTree = "<group>"; };
+		C05C29C01819BBCD00934685 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		C05C29C11819BBCD00934685 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		C0650BDA1820157800F9C186 /* videogame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = videogame.jpg; sourceTree = "<group>"; };
+		C0650BDC1820236900F9C186 /* phone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phone.jpg; sourceTree = "<group>"; };
+		C0650BDE1820237200F9C186 /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad.jpg; sourceTree = "<group>"; };
+		C0A4C54C181AEFD900F4ED7A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C0A4C54D181AEFD900F4ED7A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C0C798BE1811B92200C2D037 /* Smarter Buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smarter Buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0C798C11811B92200C2D037 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C0C798C31811B92200C2D037 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -99,6 +116,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0A4C54F181AFC6300F4ED7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0A4C54C181AEFD900F4ED7A /* User.h */,
+				C0A4C54D181AEFD900F4ED7A /* User.m */,
+				C05C29C01819BBCD00934685 /* Item.h */,
+				C05C29C11819BBCD00934685 /* Item.m */,
+				C02CE58A181D955300D35AF7 /* UserManager.h */,
+				C02CE58B181D955300D35AF7 /* UserManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C0A4C550181AFC7300F4ED7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C0C798D31811B92200C2D037 /* Main_iPhone.storyboard */,
+				C0C798D61811B92200C2D037 /* Main_iPad.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C0A4C551181AFC8F00F4ED7A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C0C798D01811B92200C2D037 /* AppDelegate.h */,
+				C0C798D11811B92200C2D037 /* AppDelegate.m */,
+				C000F32F181808DD005F3EDE /* AboutViewController.h */,
+				C000F330181808DD005F3EDE /* AboutViewController.m */,
+				C001F70018194D54009CCCF9 /* CatalogViewController.h */,
+				C001F70118194D54009CCCF9 /* CatalogViewController.m */,
+				C001F70318194EC3009CCCF9 /* CheckoutViewController.h */,
+				C001F70418194EC3009CCCF9 /* CheckoutViewController.m */,
+				C0C798D91811B92200C2D037 /* HomeViewController.h */,
+				C0C798DA1811B92200C2D037 /* HomeViewController.m */,
+				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
+				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		C0C798B51811B92200C2D037 = {
 			isa = PBXGroup;
 			children = (
@@ -133,20 +191,9 @@
 		C0C798C71811B92200C2D037 /* Smarter Buy */ = {
 			isa = PBXGroup;
 			children = (
-				C0C798D01811B92200C2D037 /* AppDelegate.h */,
-				C0C798D11811B92200C2D037 /* AppDelegate.m */,
-				C000F32F181808DD005F3EDE /* AboutViewController.h */,
-				C000F330181808DD005F3EDE /* AboutViewController.m */,
-				C001F70018194D54009CCCF9 /* CatalogViewController.h */,
-				C001F70118194D54009CCCF9 /* CatalogViewController.m */,
-				C001F70318194EC3009CCCF9 /* CheckoutViewController.h */,
-				C001F70418194EC3009CCCF9 /* CheckoutViewController.m */,
-				C0C798D91811B92200C2D037 /* HomeViewController.h */,
-				C0C798DA1811B92200C2D037 /* HomeViewController.m */,
-				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
-				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
-				C0C798D31811B92200C2D037 /* Main_iPhone.storyboard */,
-				C0C798D61811B92200C2D037 /* Main_iPad.storyboard */,
+				C0A4C551181AFC8F00F4ED7A /* Controller */,
+				C0A4C550181AFC7300F4ED7A /* View */,
+				C0A4C54F181AFC6300F4ED7A /* Model */,
 				C0C798DC1811B92200C2D037 /* Images.xcassets */,
 				C0C798C81811B92200C2D037 /* Supporting Files */,
 			);
@@ -156,7 +203,11 @@
 		C0C798C81811B92200C2D037 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C02CE58D181EDF7100D35AF7 /* catalog.plist */,
+				C0650BDA1820157800F9C186 /* videogame.jpg */,
+				C0650BDC1820236900F9C186 /* phone.jpg */,
 				C0099260181581F700A0A3CE /* television.jpg */,
+				C0650BDE1820237200F9C186 /* ipad.jpg */,
 				C0099261181581F700A0A3CE /* laptop.jpg */,
 				C0C798C91811B92200C2D037 /* Smarter Buy-Info.plist */,
 				C0C798CA1811B92200C2D037 /* InfoPlist.strings */,
@@ -261,12 +312,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C798D81811B92200C2D037 /* Main_iPad.storyboard in Resources */,
+				C0650BDB1820157800F9C186 /* videogame.jpg in Resources */,
+				C0650BDD1820236900F9C186 /* phone.jpg in Resources */,
 				C0099265181592C300A0A3CE /* RegisterViewController in Resources */,
+				C02CE58E181EDF7100D35AF7 /* catalog.plist in Resources */,
 				C0C798DD1811B92200C2D037 /* Images.xcassets in Resources */,
 				C0C798D51811B92200C2D037 /* Main_iPhone.storyboard in Resources */,
 				C0099263181581F700A0A3CE /* laptop.jpg in Resources */,
 				C0C798CC1811B92200C2D037 /* InfoPlist.strings in Resources */,
 				C0099262181581F700A0A3CE /* television.jpg in Resources */,
+				C0650BDF1820237200F9C186 /* ipad.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05C29C21819BBCD00934685 /* Item.m in Sources */,
 				C0C798DB1811B92200C2D037 /* HomeViewController.m in Sources */,
+				C02CE58C181D955300D35AF7 /* UserManager.m in Sources */,
+				C0A4C54E181AEFD900F4ED7A /* User.m in Sources */,
 				C001F70518194EC3009CCCF9 /* CheckoutViewController.m in Sources */,
 				C000F331181808DD005F3EDE /* AboutViewController.m in Sources */,
 				C001F70218194D54009CCCF9 /* CatalogViewController.m in Sources */,

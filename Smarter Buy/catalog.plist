@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Galaxy Note 3</key>
+	<dict>
+		<key>Description</key>
+		<string>http://www.bestbuy.com/site/samsung-galaxy-note-3-4g-mobile-phone-white-sprint/1948002.p;template=_specificationsTab</string>
+		<key>Name</key>
+		<string>Samsung Galaxy Note 3</string>
+		<key>Picture</key>
+		<string>phone.jpg</string>
+	</dict>
+	<key>iPad</key>
+	<dict>
+		<key>Picture</key>
+		<string>ipad.jpg</string>
+		<key>Name</key>
+		<string>Apple iPad</string>
+	</dict>
+	<key>Video Game</key>
+	<dict>
+		<key>Picture</key>
+		<string>videogame.jpg</string>
+		<key>Name</key>
+		<string>Battlefield 4</string>
+	</dict>
+	<key>Laptop</key>
+	<dict>
+		<key>Name</key>
+		<string>ASUS Laptop</string>
+		<key>Picture</key>
+		<string>laptop.jpg</string>
+	</dict>
+	<key>Television</key>
+	<dict>
+		<key>Name</key>
+		<string>Samsung HD Television</string>
+		<key>Picture</key>
+		<string>television.jpg</string>
+	</dict>
+</dict>
+</plist>

@@ -7,6 +7,8 @@
 //
 
 #import "RegisterViewController.h"
+#import "CatalogViewController.h"
+#import "User.h"
 
 @interface RegisterViewController ()
 
@@ -47,6 +49,7 @@
     NSString *cityText = [defaults objectForKey:@"city"];
     NSString *zipText = [defaults objectForKey:@"zip"];
     NSString *phoneText = [defaults objectForKey:@"phone"];
+    int stateNumber = [defaults integerForKey:@"state"];
     
     // Update the UI elements with the saved data
     [self.firstName setText:firstNameText];
@@ -55,7 +58,7 @@
     [self.city setText:cityText];
     [self.zip setText:zipText];
     [self.phone setText:phoneText];
-//    [self.statePicker selectedRowInComponent:0];
+    [self.statePicker selectRow:stateNumber inComponent:0 animated:YES];
     
     UIControl *viewControl = (UIControl*)self.view;
     [viewControl addTarget:self action:@selector(dismissKeyboard:) forControlEvents:UIControlEventTouchDown];
@@ -92,6 +95,12 @@
     NSString *cityText = [self.city text];
     NSString *zipText = [self.zip text];
     NSString *phoneText = [self.phone text];
+    NSInteger row = [self.statePicker selectedRowInComponent:0];
+    NSString *stateText = [self.statesArray objectAtIndex:row];
+                     
+    User *newUser = [[User alloc] initWithFirstName:[self.firstName text] AndLastName:[self.lastName text] AndAddress:[self.address1 text] AndCity:[self.city text] AndZip:[self.zip text] AndPhone:[self.phone text] AndState:stateText];
+    
+    self.currentUser = newUser;
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:firstNameText forKey:@"firstName"];
@@ -100,8 +109,23 @@
     [defaults setObject:cityText forKey:@"city"];
     [defaults setObject:zipText forKey:@"zip"];
     [defaults setObject:phoneText forKey:@"phone"];
+    [defaults setInteger:row forKey:@"state"];
     [defaults synchronize];
     NSLog(@"Data saved");
+    //[self performSegueWithIdentifier:@"RegisterSegue" sender:sender];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"RegisterSegue"])
+    {
+        // Get reference to the destination view controller
+        CatalogViewController *vc = [segue destinationViewController];
+        
+        // Pass any objects to the view controller here, like...
+        [vc setUser:self.currentUser];
+    }
 }
 
 #pragma mark -
