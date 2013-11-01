@@ -11,9 +11,9 @@
 @interface Item : NSObject
 
 @property (strong, nonatomic) NSString *itemName;
-@property (strong, nonatomic) NSURL *itemDescription;
+@property (strong, nonatomic) NSNumber *itemPrice;
 @property (strong, nonatomic) UIImage *itemImage;
 
-- (id)initWithItemName:(NSString*)itemName AndItemDescription:(NSString*)itemDescURL AndImage:(NSString*)itemImage;
+- (id)initWithItemName:(NSString*)itemName AndItemPrice:(NSString*)itemPrice AndImage:(NSString*)itemImage;
 
 @end

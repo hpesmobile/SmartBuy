@@ -2,10 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>Galaxy Note 3</key>
+	<key>Phone</key>
 	<dict>
-		<key>Description</key>
-		<string>http://www.bestbuy.com/site/samsung-galaxy-note-3-4g-mobile-phone-white-sprint/1948002.p;template=_specificationsTab</string>
+		<key>Price</key>
+		<real>349.99</real>
 		<key>Name</key>
 		<string>Samsung Galaxy Note 3</string>
 		<key>Picture</key>
@@ -13,6 +13,8 @@
 	</dict>
 	<key>iPad</key>
 	<dict>
+		<key>Price</key>
+		<real>449.99</real>
 		<key>Picture</key>
 		<string>ipad.jpg</string>
 		<key>Name</key>
@@ -20,6 +22,8 @@
 	</dict>
 	<key>Video Game</key>
 	<dict>
+		<key>Price</key>
+		<real>59.99</real>
 		<key>Picture</key>
 		<string>videogame.jpg</string>
 		<key>Name</key>
@@ -27,6 +31,8 @@
 	</dict>
 	<key>Laptop</key>
 	<dict>
+		<key>Price</key>
+		<real>499.99</real>
 		<key>Name</key>
 		<string>ASUS Laptop</string>
 		<key>Picture</key>
@@ -34,6 +40,10 @@
 	</dict>
 	<key>Television</key>
 	<dict>
+		<key>Weight</key>
+		<real>13.2</real>
+		<key>Price</key>
+		<real>799.99</real>
 		<key>Name</key>
 		<string>Samsung HD Television</string>
 		<key>Picture</key>

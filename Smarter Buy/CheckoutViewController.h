@@ -7,8 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "User.h"
+#import "Item.h"
 
-@interface CheckoutViewController : UIViewController
+@interface CheckoutViewController : UIViewController {
+}
+
+@property (weak, nonatomic) IBOutlet UIImageView *itemImage;
 @property (weak, nonatomic) IBOutlet UIButton *orderButton;
+@property (weak, nonatomic) IBOutlet UILabel *userLabel;
+@property (weak, nonatomic) IBOutlet UILabel *itemLabel;
+@property (weak, nonatomic) IBOutlet UILabel *shippingInfo;
+@property (weak, nonatomic) IBOutlet UILabel *itemDesc;
+@property (weak, nonatomic) IBOutlet UIScrollView *checkoutScrollView;
+
+@property (strong, nonatomic) User *currentUser;
+@property (strong , nonatomic) Item *currentItem;
 
 @end

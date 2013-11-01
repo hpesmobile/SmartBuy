@@ -9,12 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "User.h"
 #import "Item.h"
+#import "CheckoutViewController.h"
 
 @interface CatalogViewController : UIViewController <NSFileManagerDelegate> {
-    User *user;
+    User *currentUser;
+    Item *currentItem;
 }
 
-@property (strong, nonatomic) User *user;
+@property (strong, nonatomic) User *currentUser;
+@property (strong , nonatomic) Item *currentItem;
 @property (weak, nonatomic) NSString *plistFile;
 @property (strong, nonatomic) NSMutableDictionary *plist;
 @property (strong, nonatomic) NSMutableArray *allKeys;

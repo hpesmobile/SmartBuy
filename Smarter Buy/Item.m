@@ -10,11 +10,11 @@
 
 @implementation Item
 
-- (id)initWithItemName:(NSString*)itemName AndItemDescription:(NSString*)itemDescURL AndImage:(NSString*)itemImage {
+- (id)initWithItemName:(NSString*)itemName AndItemPrice:(NSNumber*)itemPrice AndImage:(NSString*)itemImage {
     self = [super init];
     if (self) {
         _itemName = itemName;
-        _itemDescription = [NSURL URLWithString:[itemDescURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+        _itemPrice = itemPrice;
         _itemImage = [UIImage imageNamed:itemImage];
     }
     return self;

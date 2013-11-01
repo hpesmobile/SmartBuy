@@ -14,7 +14,7 @@
 
 @implementation CatalogViewController
 
-@synthesize user;
+@synthesize currentUser, currentItem;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,8 +24,6 @@
     }
     return self;
 }
-
-
 
 - (void)viewDidLoad
 {
@@ -37,6 +35,7 @@
     _plist = [tempPlist mutableCopy];
     
     NSInteger row = [self getCurrentRow];
+    [self.itemPicker selectRow:row inComponent:0 animated:YES];
     [self updateImage:row];
 }
 
@@ -62,8 +61,6 @@
     }
     return 0;
 }
-
-
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
@@ -98,12 +95,38 @@
     return [[_plist allKeys] objectAtIndex:row];
 }
 
+#pragma mark -
+#pragma mark Segue Methods
 - (IBAction)selectItem:(id)sender {
     NSInteger row = [self getCurrentRow];
-    NSString *itemName = [[self getCurrentItem:row] objectForKey:@"Name"];
-    NSString *itemURL = [[self getCurrentItem:row] objectForKey:@"Description"];
-    NSString *itemImage = [[self getCurrentItem:row] objectForKey:@"Picture"];
+    NSString *currentItemName = (NSString *)[self getCurrentItem:row];
+    NSString *itemName = [[self.plist objectForKey:currentItemName] objectForKey:@"Name"];
+    NSString *itemPrice = [[self.plist objectForKey:currentItemName] objectForKey:@"Price"];
+    NSString *itemImage = [[self.plist objectForKey:currentItemName] objectForKey:@"Picture"];
     
-    Item *currentItem = [[Item alloc] initWithItemName:itemName AndItemDescription:itemURL AndImage:itemImage];
+    Item *newItem = [[Item alloc] initWithItemName:itemName AndItemPrice:itemPrice AndImage:itemImage];
+    self.currentItem = newItem;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // Make sure your segue name in storyboard is the same as this line
+    if ([[segue identifier] isEqualToString:@"SelectSegue"])
+    {
+        // Get reference to the destination view controller
+        CheckoutViewController *vc = [segue destinationViewController];
+        NSInteger row = [self getCurrentRow];
+        NSString *currentItemName = (NSString *)[self getCurrentItem:row];
+        NSString *itemName = [[self.plist objectForKey:currentItemName] objectForKey:@"Name"];
+        NSString *itemPrice = [[self.plist objectForKey:currentItemName] objectForKey:@"Price"];
+        NSString *itemImage = [[self.plist objectForKey:currentItemName] objectForKey:@"Picture"];
+        
+        Item *newItem = [[Item alloc] initWithItemName:itemName AndItemPrice:itemPrice AndImage:itemImage];
+        self.currentItem = newItem;
+        // Pass any objects to the view controller here, like...
+        [vc setCurrentUser:self.currentUser];
+        [vc setCurrentItem:self.currentItem];
+    }
+}
+
 @end

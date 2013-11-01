@@ -41,27 +41,28 @@
     self.zip.keyboardType = UIKeyboardTypeNumberPad;
     self.phone.keyboardType = UIKeyboardTypePhonePad;
     
-    // Get the stored data before the view loads
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    NSString *firstNameText = [defaults objectForKey:@"firstName"];
-    NSString *lastNameText = [defaults objectForKey:@"lastname"];
-    NSString *address1Text = [defaults objectForKey:@"address1"];
-    NSString *cityText = [defaults objectForKey:@"city"];
-    NSString *zipText = [defaults objectForKey:@"zip"];
-    NSString *phoneText = [defaults objectForKey:@"phone"];
-    int stateNumber = [defaults integerForKey:@"state"];
-    
-    // Update the UI elements with the saved data
-    [self.firstName setText:firstNameText];
-    [self.lastName setText:lastNameText];
-    [self.address1 setText:address1Text];
-    [self.city setText:cityText];
-    [self.zip setText:zipText];
-    [self.phone setText:phoneText];
-    [self.statePicker selectRow:stateNumber inComponent:0 animated:YES];
+//    // Get the stored data before the view loads
+//    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+//    NSString *firstNameText = [defaults objectForKey:@"firstName"];
+//    NSString *lastNameText = [defaults objectForKey:@"lastname"];
+//    NSString *address1Text = [defaults objectForKey:@"address1"];
+//    NSString *cityText = [defaults objectForKey:@"city"];
+//    NSString *zipText = [defaults objectForKey:@"zip"];
+//    NSString *phoneText = [defaults objectForKey:@"phone"];
+//    int stateNumber = [defaults integerForKey:@"state"];
+//    
+//    // Update the UI elements with the saved data
+//    [self.firstName setText:firstNameText];
+//    [self.lastName setText:lastNameText];
+//    [self.address1 setText:address1Text];
+//    [self.city setText:cityText];
+//    [self.zip setText:zipText];
+//    [self.phone setText:phoneText];
+//    [self.statePicker selectRow:stateNumber inComponent:0 animated:YES];
     
     UIControl *viewControl = (UIControl*)self.view;
     [viewControl addTarget:self action:@selector(dismissKeyboard:) forControlEvents:UIControlEventTouchDown];
+    [self.firstName addTarget:self action:@selector(clearHint:) forControlEvents:UIControlEventTouchDown];
 	// Do any additional setup after loading the view.
 }
 
@@ -81,6 +82,15 @@
     [self.phone resignFirstResponder];
 }
 
+- (IBAction)clearHint:(UITextField *)sender {
+    if ([sender.font.familyName isEqual: @".Helvetica Neue Interface"]) {
+        [sender setText:@""];
+        [sender setFont:[UIFont fontWithName:@"System" size:14.0]];
+        [sender setTextColor:[UIColor blackColor]];
+        [sender clearsOnBeginEditing];
+    }
+}
+
 - (IBAction)save:(id)sender {
     [self.firstName resignFirstResponder];
     [self.lastName resignFirstResponder];
@@ -96,11 +106,7 @@
     NSString *zipText = [self.zip text];
     NSString *phoneText = [self.phone text];
     NSInteger row = [self.statePicker selectedRowInComponent:0];
-    NSString *stateText = [self.statesArray objectAtIndex:row];
-                     
-    User *newUser = [[User alloc] initWithFirstName:[self.firstName text] AndLastName:[self.lastName text] AndAddress:[self.address1 text] AndCity:[self.city text] AndZip:[self.zip text] AndPhone:[self.phone text] AndState:stateText];
-    
-    self.currentUser = newUser;
+//    NSString *stateText = [self.statesArray objectAtIndex:row];
     
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:firstNameText forKey:@"firstName"];
@@ -111,8 +117,6 @@
     [defaults setObject:phoneText forKey:@"phone"];
     [defaults setInteger:row forKey:@"state"];
     [defaults synchronize];
-    NSLog(@"Data saved");
-    //[self performSegueWithIdentifier:@"RegisterSegue" sender:sender];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -123,8 +127,21 @@
         // Get reference to the destination view controller
         CatalogViewController *vc = [segue destinationViewController];
         
+        NSInteger row = [self.statePicker selectedRowInComponent:0];
+        NSString *stateText = [self.statesArray objectAtIndex:row];
+        
+        User *newUser = [[User alloc] initWithFirstName:[self.firstName text]
+                                            AndLastName:[self.lastName text]
+                                             AndAddress:[self.address1 text]
+                                                AndCity:[self.city text]
+                                                 AndZip:[self.zip text]
+                                               AndPhone:[self.phone text]
+                                               AndState:stateText];
+        
+        self.currentUser = newUser;
+        
         // Pass any objects to the view controller here, like...
-        [vc setUser:self.currentUser];
+        [vc setCurrentUser:self.currentUser];
     }
 }
 
@@ -140,7 +157,6 @@
 - (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent: (NSInteger)component
 {
     if (self.statesArray != nil) {
-        NSLog(@"Array count: %lu", (unsigned long)[self.statesArray count]);
         return [self.statesArray count];
     }
     return 0;
@@ -158,7 +174,7 @@
 #pragma mark PickerView Delegate
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    NSLog(@"You selected this: %@", [self.statesArray objectAtIndex:row]);
+    //Do something based on selected row
 }
 
 @end
