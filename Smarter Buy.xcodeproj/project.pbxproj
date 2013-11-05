@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C000F331181808DD005F3EDE /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C000F330181808DD005F3EDE /* AboutViewController.m */; };
+		C000F331181808DD005F3EDE /* ContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C000F330181808DD005F3EDE /* ContactViewController.m */; };
 		C001F70218194D54009CCCF9 /* CatalogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C001F70118194D54009CCCF9 /* CatalogViewController.m */; };
 		C001F70518194EC3009CCCF9 /* CheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C001F70418194EC3009CCCF9 /* CheckoutViewController.m */; };
 		C0099262181581F700A0A3CE /* television.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099260181581F700A0A3CE /* television.jpg */; };
 		C0099263181581F700A0A3CE /* laptop.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0099261181581F700A0A3CE /* laptop.jpg */; };
 		C0099265181592C300A0A3CE /* RegisterViewController in Resources */ = {isa = PBXBuildFile; fileRef = C0099264181592C300A0A3CE /* RegisterViewController */; };
-		C02CE58C181D955300D35AF7 /* UserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C02CE58B181D955300D35AF7 /* UserManager.m */; };
 		C02CE58E181EDF7100D35AF7 /* catalog.plist in Resources */ = {isa = PBXBuildFile; fileRef = C02CE58D181EDF7100D35AF7 /* catalog.plist */; };
+		C03B418218292A7B00E7DFB7 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C03B418118292A7B00E7DFB7 /* AboutViewController.m */; };
 		C05C29C21819BBCD00934685 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = C05C29C11819BBCD00934685 /* Item.m */; };
 		C0650BDB1820157800F9C186 /* videogame.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0650BDA1820157800F9C186 /* videogame.jpg */; };
 		C0650BDD1820236900F9C186 /* phone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0650BDC1820236900F9C186 /* phone.jpg */; };
 		C0650BDF1820237200F9C186 /* ipad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C0650BDE1820237200F9C186 /* ipad.jpg */; };
+		C09E3A0118281D1E00B6EA05 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09E3A0018281D1E00B6EA05 /* LocationViewController.m */; };
+		C09E3A0318281F2800B6EA05 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09E3A0218281F2800B6EA05 /* MapKit.framework */; };
 		C0A4C54E181AEFD900F4ED7A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C0A4C54D181AEFD900F4ED7A /* User.m */; };
 		C0C798C21811B92200C2D037 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C11811B92200C2D037 /* Foundation.framework */; };
 		C0C798C41811B92200C2D037 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C798C31811B92200C2D037 /* CoreGraphics.framework */; };
@@ -36,6 +38,10 @@
 		C0C798EE1811B92200C2D037 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C0C798EC1811B92200C2D037 /* InfoPlist.strings */; };
 		C0C798F01811B92200C2D037 /* Smarter_BuyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C798EF1811B92200C2D037 /* Smarter_BuyTests.m */; };
 		C0D516C6181561C8006D2DDD /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0D516C5181561C8006D2DDD /* RegisterViewController.m */; };
+		C0F7631818293CEC00029E4D /* JPSThumnail.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F7631718293CEC00029E4D /* JPSThumnail.m */; };
+		C0F7631D182941C900029E4D /* JPSThumbnailAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F7631A182941C900029E4D /* JPSThumbnailAnnotation.m */; };
+		C0F7631E182941C900029E4D /* JPSThumbnailAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F7631C182941C900029E4D /* JPSThumbnailAnnotationView.m */; };
+		C0F76320182943AD00029E4D /* store.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F7631F182943AD00029E4D /* store.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C000F32F181808DD005F3EDE /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
-		C000F330181808DD005F3EDE /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		C000F32F181808DD005F3EDE /* ContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactViewController.h; sourceTree = "<group>"; };
+		C000F330181808DD005F3EDE /* ContactViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactViewController.m; sourceTree = "<group>"; };
 		C001F70018194D54009CCCF9 /* CatalogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogViewController.h; sourceTree = "<group>"; };
 		C001F70118194D54009CCCF9 /* CatalogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogViewController.m; sourceTree = "<group>"; };
 		C001F70318194EC3009CCCF9 /* CheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckoutViewController.h; sourceTree = "<group>"; };
@@ -58,14 +64,17 @@
 		C0099260181581F700A0A3CE /* television.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = television.jpg; sourceTree = "<group>"; };
 		C0099261181581F700A0A3CE /* laptop.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = laptop.jpg; sourceTree = "<group>"; };
 		C0099264181592C300A0A3CE /* RegisterViewController */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RegisterViewController; path = "Smarter Buy/RegisterViewController"; sourceTree = "<group>"; };
-		C02CE58A181D955300D35AF7 /* UserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserManager.h; sourceTree = "<group>"; };
-		C02CE58B181D955300D35AF7 /* UserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserManager.m; sourceTree = "<group>"; };
 		C02CE58D181EDF7100D35AF7 /* catalog.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = catalog.plist; sourceTree = "<group>"; };
+		C03B418018292A7B00E7DFB7 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		C03B418118292A7B00E7DFB7 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		C05C29C01819BBCD00934685 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
 		C05C29C11819BBCD00934685 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		C0650BDA1820157800F9C186 /* videogame.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = videogame.jpg; sourceTree = "<group>"; };
 		C0650BDC1820236900F9C186 /* phone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = phone.jpg; sourceTree = "<group>"; };
 		C0650BDE1820237200F9C186 /* ipad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ipad.jpg; sourceTree = "<group>"; };
+		C09E39FF18281D1E00B6EA05 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		C09E3A0018281D1E00B6EA05 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		C09E3A0218281F2800B6EA05 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C0A4C54C181AEFD900F4ED7A /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		C0A4C54D181AEFD900F4ED7A /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		C0C798BE1811B92200C2D037 /* Smarter Buy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smarter Buy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +99,13 @@
 		C0C798EF1811B92200C2D037 /* Smarter_BuyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smarter_BuyTests.m; sourceTree = "<group>"; };
 		C0D516C4181561C8006D2DDD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		C0D516C5181561C8006D2DDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C0F7631618293CEC00029E4D /* JPSThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnail.h; sourceTree = "<group>"; };
+		C0F7631718293CEC00029E4D /* JPSThumnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumnail.m; sourceTree = "<group>"; };
+		C0F76319182941C900029E4D /* JPSThumbnailAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotation.h; sourceTree = "<group>"; };
+		C0F7631A182941C900029E4D /* JPSThumbnailAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotation.m; sourceTree = "<group>"; };
+		C0F7631B182941C900029E4D /* JPSThumbnailAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotationView.h; sourceTree = "<group>"; };
+		C0F7631C182941C900029E4D /* JPSThumbnailAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotationView.m; sourceTree = "<group>"; };
+		C0F7631F182943AD00029E4D /* store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C09E3A0318281F2800B6EA05 /* MapKit.framework in Frameworks */,
 				C0C798C41811B92200C2D037 /* CoreGraphics.framework in Frameworks */,
 				C0C798C61811B92200C2D037 /* UIKit.framework in Frameworks */,
 				C0C798C21811B92200C2D037 /* Foundation.framework in Frameworks */,
@@ -119,12 +136,16 @@
 		C0A4C54F181AFC6300F4ED7A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C0F76319182941C900029E4D /* JPSThumbnailAnnotation.h */,
+				C0F7631A182941C900029E4D /* JPSThumbnailAnnotation.m */,
+				C0F7631B182941C900029E4D /* JPSThumbnailAnnotationView.h */,
+				C0F7631C182941C900029E4D /* JPSThumbnailAnnotationView.m */,
+				C0F7631618293CEC00029E4D /* JPSThumbnail.h */,
+				C0F7631718293CEC00029E4D /* JPSThumnail.m */,
 				C0A4C54C181AEFD900F4ED7A /* User.h */,
 				C0A4C54D181AEFD900F4ED7A /* User.m */,
 				C05C29C01819BBCD00934685 /* Item.h */,
 				C05C29C11819BBCD00934685 /* Item.m */,
-				C02CE58A181D955300D35AF7 /* UserManager.h */,
-				C02CE58B181D955300D35AF7 /* UserManager.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -143,14 +164,18 @@
 			children = (
 				C0C798D01811B92200C2D037 /* AppDelegate.h */,
 				C0C798D11811B92200C2D037 /* AppDelegate.m */,
-				C000F32F181808DD005F3EDE /* AboutViewController.h */,
-				C000F330181808DD005F3EDE /* AboutViewController.m */,
 				C001F70018194D54009CCCF9 /* CatalogViewController.h */,
+				C03B418018292A7B00E7DFB7 /* AboutViewController.h */,
+				C03B418118292A7B00E7DFB7 /* AboutViewController.m */,
 				C001F70118194D54009CCCF9 /* CatalogViewController.m */,
 				C001F70318194EC3009CCCF9 /* CheckoutViewController.h */,
 				C001F70418194EC3009CCCF9 /* CheckoutViewController.m */,
+				C000F32F181808DD005F3EDE /* ContactViewController.h */,
+				C000F330181808DD005F3EDE /* ContactViewController.m */,
 				C0C798D91811B92200C2D037 /* HomeViewController.h */,
 				C0C798DA1811B92200C2D037 /* HomeViewController.m */,
+				C09E39FF18281D1E00B6EA05 /* LocationViewController.h */,
+				C09E3A0018281D1E00B6EA05 /* LocationViewController.m */,
 				C0D516C4181561C8006D2DDD /* RegisterViewController.h */,
 				C0D516C5181561C8006D2DDD /* RegisterViewController.m */,
 			);
@@ -180,6 +205,7 @@
 		C0C798C01811B92200C2D037 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C09E3A0218281F2800B6EA05 /* MapKit.framework */,
 				C0C798C11811B92200C2D037 /* Foundation.framework */,
 				C0C798C31811B92200C2D037 /* CoreGraphics.framework */,
 				C0C798C51811B92200C2D037 /* UIKit.framework */,
@@ -204,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				C02CE58D181EDF7100D35AF7 /* catalog.plist */,
+				C0F7631F182943AD00029E4D /* store.png */,
 				C0650BDA1820157800F9C186 /* videogame.jpg */,
 				C0650BDC1820236900F9C186 /* phone.jpg */,
 				C0099260181581F700A0A3CE /* television.jpg */,
@@ -312,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C798D81811B92200C2D037 /* Main_iPad.storyboard in Resources */,
+				C0F76320182943AD00029E4D /* store.png in Resources */,
 				C0650BDB1820157800F9C186 /* videogame.jpg in Resources */,
 				C0650BDD1820236900F9C186 /* phone.jpg in Resources */,
 				C0099265181592C300A0A3CE /* RegisterViewController in Resources */,
@@ -342,10 +370,14 @@
 			files = (
 				C05C29C21819BBCD00934685 /* Item.m in Sources */,
 				C0C798DB1811B92200C2D037 /* HomeViewController.m in Sources */,
-				C02CE58C181D955300D35AF7 /* UserManager.m in Sources */,
+				C09E3A0118281D1E00B6EA05 /* LocationViewController.m in Sources */,
 				C0A4C54E181AEFD900F4ED7A /* User.m in Sources */,
+				C0F7631E182941C900029E4D /* JPSThumbnailAnnotationView.m in Sources */,
+				C0F7631D182941C900029E4D /* JPSThumbnailAnnotation.m in Sources */,
 				C001F70518194EC3009CCCF9 /* CheckoutViewController.m in Sources */,
-				C000F331181808DD005F3EDE /* AboutViewController.m in Sources */,
+				C0F7631818293CEC00029E4D /* JPSThumnail.m in Sources */,
+				C03B418218292A7B00E7DFB7 /* AboutViewController.m in Sources */,
+				C000F331181808DD005F3EDE /* ContactViewController.m in Sources */,
 				C001F70218194D54009CCCF9 /* CatalogViewController.m in Sources */,
 				C0C798D21811B92200C2D037 /* AppDelegate.m in Sources */,
 				C0C798CE1811B92200C2D037 /* main.m in Sources */,

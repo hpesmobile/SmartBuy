@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Home View Controller - Home-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="HomeViewController" sceneMemberID="viewController">
@@ -20,6 +20,7 @@
                                 <rect key="frame" x="133" y="303" width="55" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Contact">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -30,6 +31,7 @@
                                 <rect key="frame" x="119" y="271" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Place Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -40,13 +42,18 @@
                                 <rect key="frame" x="127" y="341" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Locations">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NgV-Uk-Tvq" kind="push" id="2iE-al-1Uk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jr5-q8-OND">
                                 <rect key="frame" x="137" y="379" width="42" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="About">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -54,15 +61,15 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529411764708" blue="0.83921568627450982" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="spU-Ze-6xL"/>
+                    <navigationItem key="navigationItem" title="Home" id="spU-Ze-6xL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-151" y="31"/>
         </scene>
-        <!--Catalog View Controller-->
+        <!--Catalog View Controller - Catalog-->
         <scene sceneID="LeW-Wl-X30">
             <objects>
                 <viewController id="ZVP-oE-6q1" customClass="CatalogViewController" sceneMemberID="viewController">
@@ -86,6 +93,7 @@
                                 <rect key="frame" x="121" y="518" width="78" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Item">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -93,14 +101,15 @@
                                     <segue destination="EmM-wl-gq3" kind="push" identifier="SelectSegue" id="ZWN-bp-9Vi"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBt-D4-iZR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sBt-D4-iZR">
                                 <rect key="frame" x="25" y="70" width="270" height="270"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OqS-m1-wd2"/>
+                    <navigationItem key="navigationItem" title="Catalog" id="OqS-m1-wd2"/>
                     <connections>
                         <outlet property="itemImage" destination="sBt-D4-iZR" id="5kr-JP-pGg"/>
                         <outlet property="itemPicker" destination="MN6-VQ-jX9" id="7Ec-wD-fi9"/>
@@ -111,7 +120,7 @@
             </objects>
             <point key="canvasLocation" x="1087" y="31"/>
         </scene>
-        <!--Checkout View Controller-->
+        <!--Checkout View Controller - Checkout-->
         <scene sceneID="pmR-5B-GBG">
             <objects>
                 <viewController id="EmM-wl-gq3" customClass="CheckoutViewController" sceneMemberID="viewController">
@@ -127,6 +136,7 @@
                                 <rect key="frame" x="119" y="518" width="82" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Place Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -163,8 +173,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User:" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="eyJ-sK-3eX">
-                                        <rect key="frame" x="20" y="370" width="240" height="63"/>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="User:" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="eyJ-sK-3eX">
+                                        <rect key="frame" x="20" y="370" width="240" height="83"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="highlightedColor"/>
@@ -182,7 +192,7 @@
                                 </connections>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fNj-lu-Ph2" firstAttribute="centerX" secondItem="dXY-ga-IrG" secondAttribute="centerX" id="4Pn-ZY-97q"/>
                             <constraint firstItem="fNj-lu-Ph2" firstAttribute="centerX" secondItem="g3B-sr-dcJ" secondAttribute="centerX" id="AYk-WG-Fvc"/>
@@ -192,7 +202,7 @@
                             <constraint firstItem="fNj-lu-Ph2" firstAttribute="leading" secondItem="g3B-sr-dcJ" secondAttribute="leading" constant="40" id="wzh-ku-ubj"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="rQs-78-V07"/>
+                    <navigationItem key="navigationItem" title="Checkout" id="rQs-78-V07"/>
                     <connections>
                         <outlet property="checkoutScrollView" destination="fNj-lu-Ph2" id="Fi7-rs-6ja"/>
                         <outlet property="itemDesc" destination="aJC-kx-18f" id="ZBb-sN-OKJ"/>
@@ -207,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="1516" y="31"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - Order Confirmation-->
         <scene sceneID="BfH-QN-gAN">
             <objects>
                 <viewController id="a8j-V4-9vK" sceneMemberID="viewController">
@@ -223,6 +233,7 @@
                                 <rect key="frame" x="114" y="518" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Return Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -236,9 +247,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="HfW-KG-MKt"/>
+                    <navigationItem key="navigationItem" title="Order Confirmation" id="HfW-KG-MKt"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pYk-Oj-z8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -253,14 +264,14 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="OGk-lC-W8I"/>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="rZG-RP-TIC"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gLM-Da-p6s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-581" y="31"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Register View Controller - User Information-->
         <scene sceneID="r6D-E7-TB5">
             <objects>
                 <viewController id="4gz-7R-kTA" customClass="RegisterViewController" sceneMemberID="viewController">
@@ -292,7 +303,7 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="touchUpInside" id="YmF-wG-4gD"/>
+                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="editingDidBegin" id="JEe-uo-UA4"/>
                                     <action selector="dismissKeyboard:" destination="4gz-7R-kTA" eventType="editingDidEnd" id="AFw-HF-9BK"/>
                                     <outlet property="delegate" destination="YTZ-aO-Whr" id="7WS-Sy-JeN"/>
                                 </connections>
@@ -304,6 +315,7 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
+                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="editingDidBegin" id="BSv-KQ-Pnz"/>
                                     <action selector="clearHint:" destination="4gz-7R-kTA" eventType="touchUpInside" id="rsV-wy-kCQ"/>
                                     <outlet property="delegate" destination="4gz-7R-kTA" id="vOR-3z-xAg"/>
                                 </connections>
@@ -315,7 +327,8 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="touchUpInside" id="kUf-zv-ebX"/>
+                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="editingDidBegin" id="TAx-VH-QjF"/>
+                                    <action selector="dismissKeyboard:" destination="4gz-7R-kTA" eventType="editingDidEnd" id="dq1-T0-cqe"/>
                                     <outlet property="delegate" destination="4gz-7R-kTA" id="vTD-BE-ilh"/>
                                 </connections>
                             </textField>
@@ -327,8 +340,8 @@
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="touchUpInside" id="Zob-s4-jtk"/>
-                                    <outlet property="delegate" destination="4gz-7R-kTA" id="rZ7-za-jbv"/>
+                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="editingDidBegin" id="E7f-iK-eAD"/>
+                                    <outlet property="delegate" destination="4gz-7R-kTA" id="3HV-D5-l8J"/>
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="e.g. Oxford" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqg-f3-Ihc">
@@ -339,6 +352,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="clearHint:" destination="4gz-7R-kTA" eventType="touchUpInside" id="2Og-h8-ZWg"/>
+                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="editingDidBegin" id="RV8-Ay-z9C"/>
                                     <outlet property="delegate" destination="4gz-7R-kTA" id="orO-lC-z3Z"/>
                                 </connections>
                             </textField>
@@ -350,6 +364,8 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <action selector="clearHint:" destination="4gz-7R-kTA" eventType="touchUpInside" id="dEp-Ov-jFY"/>
+                                    <action selector="clearHint:" destination="4gz-7R-kTA" eventType="editingDidBegin" id="rB7-23-q8T"/>
+                                    <action selector="dismissKeyboard:" destination="4gz-7R-kTA" eventType="editingDidEnd" id="tkg-YH-DsD"/>
                                     <outlet property="delegate" destination="4gz-7R-kTA" id="3Eb-Vc-l1C"/>
                                 </connections>
                             </textField>
@@ -371,6 +387,7 @@
                                 <rect key="frame" x="137" y="518" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -398,17 +415,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                         <connections>
                             <action selector="dismissKeyboard:" destination="4gz-7R-kTA" eventType="valueChanged" id="5d4-fw-hkd"/>
                         </connections>
                     </view>
-                    <navigationItem key="navigationItem" id="P49-3S-KQ0"/>
+                    <navigationItem key="navigationItem" title="User Information" id="P49-3S-KQ0"/>
                     <connections>
                         <outlet property="address1" destination="BdQ-LR-tBL" id="Kzg-aH-XZw"/>
                         <outlet property="city" destination="xqg-f3-Ihc" id="XLk-as-La5"/>
                         <outlet property="firstName" destination="0FI-t8-Hrd" id="rWI-0y-AQA"/>
                         <outlet property="lastName" destination="1rk-nf-JoO" id="eV6-m1-wZs"/>
+                        <outlet property="nextButton" destination="Taa-XD-scm" id="mTM-Zy-rM1"/>
                         <outlet property="phone" destination="5VY-AP-qh6" id="sf2-Yo-goo"/>
                         <outlet property="statePicker" destination="m2H-uy-m09" id="2UG-3z-Asl"/>
                         <outlet property="zip" destination="m9p-K0-qNm" id="yDr-CF-Iiz"/>
@@ -418,10 +436,10 @@
             </objects>
             <point key="canvasLocation" x="699" y="31"/>
         </scene>
-        <!--About View Controller-->
+        <!--Contact View Controller - Contact-->
         <scene sceneID="zPW-5w-Dpw">
             <objects>
-                <viewController id="FDB-Sb-Aax" customClass="AboutViewController" sceneMemberID="viewController">
+                <viewController id="FDB-Sb-Aax" customClass="ContactViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hng-IC-DC2"/>
                         <viewControllerLayoutGuide type="bottom" id="hvI-K2-I4X"/>
@@ -449,9 +467,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="yZt-gg-awD"/>
+                    <navigationItem key="navigationItem" title="Contact" id="yZt-gg-awD"/>
                     <connections>
                         <outlet property="email" destination="ljZ-z6-gby" id="g1n-8w-dZs"/>
                         <outlet property="phone" destination="oay-Lv-MiI" id="kc2-E3-WeX"/>
@@ -461,10 +479,41 @@
             </objects>
             <point key="canvasLocation" x="1087" y="701"/>
         </scene>
-        <!--View Controller-->
+        <!--Location View Controller - Locations-->
+        <scene sceneID="NRW-gP-1qo">
+            <objects>
+                <viewController id="NgV-Uk-Tvq" customClass="LocationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ydS-pV-ead"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ttj-J1-gyF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vZ8-p9-Wd2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-Yx-fS0">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="NgV-Uk-Tvq" id="STK-Rb-v8I"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Locations" id="dFL-Xj-kL4"/>
+                    <connections>
+                        <outlet property="mapView" destination="m9n-Yx-fS0" id="g9c-tt-Boa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhZ-Tv-zFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-151" y="701"/>
+        </scene>
+        <!--About View Controller - About-->
         <scene sceneID="5eU-wK-u5E">
             <objects>
-                <viewController id="gHD-kl-Jn8" sceneMemberID="viewController">
+                <viewController id="gHD-kl-Jn8" customClass="AboutViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eSF-hA-inh"/>
                         <viewControllerLayoutGuide type="bottom" id="s3G-Jt-XOd"/>
@@ -480,20 +529,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-De-4hG">
-                                <rect key="frame" x="118" y="110" width="85" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggR-De-4hG">
+                                <rect key="frame" x="112" y="110" width="96" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.58823529409999997" blue="0.83921568629999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WuW-Xv-6Kx"/>
+                    <navigationItem key="navigationItem" title="About" id="WuW-Xv-6Kx"/>
+                    <connections>
+                        <outlet property="versionLabel" destination="ggR-De-4hG" id="uf1-NM-ZDr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EW8-rW-trK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="273" y="701"/>
+            <point key="canvasLocation" x="297" y="701"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

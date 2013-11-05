@@ -37,7 +37,7 @@
                              [self.currentUser state],
                              [self.currentUser zip]]];
     double tax = [self.currentItem.itemPrice doubleValue] * 0.06; // get tax value for state
-    [self.itemLabel setText:[NSString stringWithFormat:@"%@\n$%@\nTax: $%.2f",
+    [self.itemLabel setText:[NSString stringWithFormat:@"%@\nPrice: $%@\nTax: $%.2f",
                              [self.currentItem itemName],
                              [self.currentItem itemPrice],
                              tax]];

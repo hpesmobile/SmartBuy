@@ -63,7 +63,6 @@
     UIControl *viewControl = (UIControl*)self.view;
     [viewControl addTarget:self action:@selector(dismissKeyboard:) forControlEvents:UIControlEventTouchDown];
     [self.firstName addTarget:self action:@selector(clearHint:) forControlEvents:UIControlEventTouchDown];
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,11 +82,11 @@
 }
 
 - (IBAction)clearHint:(UITextField *)sender {
-    if ([sender.font.familyName isEqual: @".Helvetica Neue Interface"]) {
+    NSLog(@"%@", sender.font.familyName);
+    if ([sender.font.familyName isEqual: @".Helvetica Neue Interface"] && sender.font.pointSize == 12.0) {
         [sender setText:@""];
         [sender setFont:[UIFont fontWithName:@"System" size:14.0]];
         [sender setTextColor:[UIColor blackColor]];
-        [sender clearsOnBeginEditing];
     }
 }
 
