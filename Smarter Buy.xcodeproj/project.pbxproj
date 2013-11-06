@@ -41,7 +41,7 @@
 		C0F7631818293CEC00029E4D /* JPSThumnail.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F7631718293CEC00029E4D /* JPSThumnail.m */; };
 		C0F7631D182941C900029E4D /* JPSThumbnailAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F7631A182941C900029E4D /* JPSThumbnailAnnotation.m */; };
 		C0F7631E182941C900029E4D /* JPSThumbnailAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0F7631C182941C900029E4D /* JPSThumbnailAnnotationView.m */; };
-		C0F76320182943AD00029E4D /* store.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F7631F182943AD00029E4D /* store.png */; };
+		C0F76322182980FF00029E4D /* store.png in Resources */ = {isa = PBXBuildFile; fileRef = C0F76321182980FF00029E4D /* store.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +105,7 @@
 		C0F7631A182941C900029E4D /* JPSThumbnailAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotation.m; sourceTree = "<group>"; };
 		C0F7631B182941C900029E4D /* JPSThumbnailAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotationView.h; sourceTree = "<group>"; };
 		C0F7631C182941C900029E4D /* JPSThumbnailAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumbnailAnnotationView.m; sourceTree = "<group>"; };
-		C0F7631F182943AD00029E4D /* store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store.png; sourceTree = "<group>"; };
+		C0F76321182980FF00029E4D /* store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				C02CE58D181EDF7100D35AF7 /* catalog.plist */,
-				C0F7631F182943AD00029E4D /* store.png */,
+				C0F76321182980FF00029E4D /* store.png */,
 				C0650BDA1820157800F9C186 /* videogame.jpg */,
 				C0650BDC1820236900F9C186 /* phone.jpg */,
 				C0099260181581F700A0A3CE /* television.jpg */,
@@ -339,7 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0C798D81811B92200C2D037 /* Main_iPad.storyboard in Resources */,
-				C0F76320182943AD00029E4D /* store.png in Resources */,
+				C0F76322182980FF00029E4D /* store.png in Resources */,
 				C0650BDB1820157800F9C186 /* videogame.jpg in Resources */,
 				C0650BDD1820236900F9C186 /* phone.jpg in Resources */,
 				C0099265181592C300A0A3CE /* RegisterViewController in Resources */,

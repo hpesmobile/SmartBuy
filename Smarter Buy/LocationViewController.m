@@ -56,8 +56,35 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)launchNavigation:(JPSThumbnail *)location {
+    Class mapItemClass = [MKMapItem class];
+    if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
+    {
+        // Create an MKMapItem to pass to the Maps app
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:location.coordinate
+                                                       addressDictionary:nil];
+        MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+        [mapItem setName:location.title];
+        
+        // Set the directions mode to "Walking"
+        // Can use MKLaunchOptionsDirectionsModeDriving instead
+        NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving};
+        // Get the "Current User Location" MKMapItem
+        MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+        // Pass the current location and destination map items to the Maps app
+        // Set the direction mode in the launchOptions dictionary
+        [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem] 
+                       launchOptions:launchOptions];
+    }
+}
+
+- (JPSThumbnail *)weakLocation:(JPSThumbnail *)location {
+    __weak typeof(JPSThumbnail) *weakLocation = location;
+    return weakLocation;
+}
+
 - (NSArray *)generateAnnotations {
-    NSMutableArray *annotations = [[NSMutableArray alloc] initWithCapacity:5];
+    NSMutableArray *annotations = [[NSMutableArray alloc] init];
     
     // Empire State Building
     JPSThumbnail *empire = [[JPSThumbnail alloc] init];
@@ -65,7 +92,10 @@
     empire.title = @"Empire State Building";
     empire.subtitle = @"NYC Landmark";
     empire.coordinate = CLLocationCoordinate2DMake(40.75, -73.99);
-    empire.disclosureBlock = ^{ NSLog(@"selected Empire"); };
+    JPSThumbnail *weakLocation = [self weakLocation:empire];
+    empire.disclosureBlock = ^{
+        [self launchNavigation:weakLocation];
+    };
     
     [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:empire]];
     
@@ -75,7 +105,10 @@
     apple.title = @"Apple HQ";
     apple.subtitle = @"Apple Headquarters";
     apple.coordinate = CLLocationCoordinate2DMake(37.33, -122.03);
-    apple.disclosureBlock = ^{ NSLog(@"selected Apple"); };
+    weakLocation = [self weakLocation:apple];
+    apple.disclosureBlock = ^{
+        [self launchNavigation:weakLocation];
+    };
     
     [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:apple]];
     
@@ -85,7 +118,10 @@
     ottawa.title = @"Parliament of Canada";
     ottawa.subtitle = @"Oh Canada!";
     ottawa.coordinate = CLLocationCoordinate2DMake(45.43, -75.70);
-    ottawa.disclosureBlock = ^{ NSLog(@"selected Ottawa"); };
+    weakLocation = [self weakLocation:ottawa];
+    ottawa.disclosureBlock = ^{
+        [self launchNavigation:weakLocation];
+    };
     
     [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:ottawa]];
     
@@ -95,7 +131,24 @@
     hp.title = @"HP Pontiac";
     hp.subtitle = @"Smarter Buy HQ";
     hp.coordinate = CLLocationCoordinate2DMake(42.619986, -83.263062);
-    hp.disclosureBlock = ^{ NSLog(@"selected HP HQ"); };
+    weakLocation = [self weakLocation:hp];
+    hp.disclosureBlock = ^{
+        [self launchNavigation:weakLocation];
+    };
+    
+    [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:hp]];
+    
+    JPSThumbnail *microsoft = [[JPSThumbnail alloc] init];
+    hp.image = [UIImage imageNamed:@"store.png"];
+    hp.title = @"Microsoft";
+    hp.subtitle = @"Microsoft HQ";
+    hp.coordinate = CLLocationCoordinate2DMake(47.640071, -122.129598);
+    weakLocation = [self weakLocation:microsoft];
+    hp.disclosureBlock = ^{
+        [self launchNavigation:weakLocation];
+    };
+    
+    [annotations addObject:[[JPSThumbnailAnnotation alloc] initWithThumbnail:microsoft]];
     
     return annotations;
 }
