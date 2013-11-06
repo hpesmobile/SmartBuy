@@ -82,12 +82,12 @@
 }
 
 - (IBAction)clearHint:(UITextField *)sender {
-    NSLog(@"%@", sender.font.familyName);
-    if ([sender.font.familyName isEqual: @".Helvetica Neue Interface"] && sender.font.pointSize == 12.0) {
-        [sender setText:@""];
-        [sender setFont:[UIFont fontWithName:@"System" size:14.0]];
-        [sender setTextColor:[UIColor blackColor]];
-    }
+//    NSLog(@"%@", sender.font.familyName);
+//    if ([sender.font.familyName isEqual: @".Helvetica Neue Interface"] && sender.font.pointSize == 12.0) {
+//        [sender setText:@""];
+//        [sender setFont:[UIFont fontWithName:@"System" size:14.0]];
+//        [sender setTextColor:[UIColor blackColor]];
+//    }
 }
 
 - (IBAction)save:(id)sender {

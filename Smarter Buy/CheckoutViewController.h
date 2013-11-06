@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *itemDesc;
 @property (weak, nonatomic) IBOutlet UIScrollView *checkoutScrollView;
 
+- (IBAction)placeOrder:(id)sender;
+
 @property (strong, nonatomic) User *currentUser;
 @property (strong , nonatomic) Item *currentItem;
 

@@ -99,6 +99,7 @@
 		C0C798EF1811B92200C2D037 /* Smarter_BuyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Smarter_BuyTests.m; sourceTree = "<group>"; };
 		C0D516C4181561C8006D2DDD /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
 		C0D516C5181561C8006D2DDD /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		C0F6DF1B182A8F24002C497E /* PontiacLocation.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PontiacLocation.gpx; sourceTree = "<group>"; };
 		C0F7631618293CEC00029E4D /* JPSThumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnail.h; sourceTree = "<group>"; };
 		C0F7631718293CEC00029E4D /* JPSThumnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPSThumnail.m; sourceTree = "<group>"; };
 		C0F76319182941C900029E4D /* JPSThumbnailAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPSThumbnailAnnotation.h; sourceTree = "<group>"; };
@@ -240,6 +241,7 @@
 				C0C798CA1811B92200C2D037 /* InfoPlist.strings */,
 				C0C798CD1811B92200C2D037 /* main.m */,
 				C0C798CF1811B92200C2D037 /* Smarter Buy-Prefix.pch */,
+				C0F6DF1B182A8F24002C497E /* PontiacLocation.gpx */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
